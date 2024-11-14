@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.out{
+    border: solid 1px;
+    height:160px;
+    display:flex;
+}
+#in1,#in2,#in3{
+    border:solid 1px;
+    height:160px;
+}
+#in1{
+    width: 230px;
+}
+#in2{
+    width: 930px;
+    text-align:center;
+    background-color: burlywood;
+}
+#in3{
+    width: 400px;
+}
+#clgname{
+    font-size: 20px;
+    color:blueviolet;
+}
+#scrolltext{
+    font-size: 20px;
+    color: blueviolet;
+    font-weight: bold;
+}
+#navbox{
+    border: solid 1px;
+    height: 50px;
+}
+ul li{
+    border: solid 1px;
+    height:  50px;
+    width: 150px;
+    float:  left;
+    text-align: center;
+    line-height: 50px;
+    background-color: brown;
+    margin-right: 1px;
+    border-radius: 10px;
+}
+ul{
+    list-style: none;
+}
+ul li a{
+    color:gold;
+    font-size: 20px;
+    text-decoration: none;
+}
+ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+    display:block;
+}
+ul li:hover{
+    background-color: aqua;
+}
+.outbox{
+    border: solid 1px;
+    height: 380px;
+    display: flex;
+    justify-content: space-between;
+}
+#inbox1,#inbox2,#inbox3{
+    border: solid 1px;
+    height:380px;
+    
+}
+#inbox1{
+    width:620px;
+    background-image: url(bg1.jpeg);
+    background-repeat: no-repeat;
+    background-size: 620px 380px;
+    animation-name:imgchange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes imgchange{
+    0%{
+        background-image: url(bg1.jpeg);
+    }
+    10%{
+        background-image:url(bg2.jpeg);
+    }
+    20%{
+        background-image:url(bg3.jpeg);
+
+    }
+    30%{
+        background-image:url(bg4.jpeg)
+
+    }
+    40%{
+        background-image: url(bg5.jpeg);
+}
+}
+#inbox2,#inbox3{
+    width: 350px;
+    text-align: center;
+}
